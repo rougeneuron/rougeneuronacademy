@@ -9,3 +9,7 @@
     max-width: 150px;
     margin: 0 auto;
 }
+
+.icon.brands.fa-youtube { color: #FF0000; }
+.icons { display: flex; justify-content: center; }
+.icons li { margin: 0 10px; }
