@@ -1,0 +1,240 @@
+:root {
+    /* Default dark theme variables */
+    --bg-color: #1b1f22;
+    --text-color: #ffffff;
+    --link-color: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.15);
+    --overlay-color: rgba(19, 21, 25, 0.5);
+  }
+  
+  body.light-theme {
+    /* Light theme variables */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #000000;
+    --border-color: rgba(0, 0, 0, 0.15);
+    --overlay-color: #ffffff;
+  }
+  
+  /* Base elements */
+  body.light-theme {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  /* Fix for background transparency */
+  body.light-theme:before {
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+  }
+  
+  body.light-theme:after {
+    background: #ffffff !important;
+    opacity: 1 !important;
+  }
+  
+  /* Target the wrapper background */
+  body.light-theme #wrapper {
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Make sure the main background is solid */
+  body.light-theme #main {
+    background-color: #ffffff !important;
+  }
+  
+  /* Ensure articles have solid background */
+  body.light-theme #main article {
+    background-color: #ffffff !important;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Target article borders specifically */
+  body.light-theme #main article:before,
+  body.light-theme #main article:after {
+    background-color: #000000 !important;
+  }
+  
+  /* Additional selectors for article borders */
+  body.light-theme #main article .close:before,
+  body.light-theme #main article .close:after {
+    background-color: #000000 !important;
+  }
+  
+  /* Target any border properties directly */
+  body.light-theme #main article {
+    border-color: rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  /* Target any wrapper elements around articles */
+  body.light-theme #main .wrapper:before,
+  body.light-theme #main .wrapper:after {
+    background-color: #000000 !important;
+  }
+  
+  /* Fix for close buttons and article lines */
+  body.light-theme .close:before,
+  body.light-theme .close:after {
+    background-color: #000000 !important;
+  }
+  
+  /* Target any horizontal rules or dividers */
+  body.light-theme hr,
+  body.light-theme .divider {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border-color: rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  /* Target any SVG elements that might be used for UI */
+  body.light-theme svg path,
+  body.light-theme svg line,
+  body.light-theme svg polyline {
+    stroke: #000000 !important;
+  }
+  
+  /* Fix for links in light mode */
+  body.light-theme #nav a, 
+  body.light-theme #main a,
+  body.light-theme #header nav ul li a,
+  body.light-theme #footer a {
+    color: #000000 !important;
+    border-bottom-color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  body.light-theme #nav a:hover, 
+  body.light-theme #main a:hover,
+  body.light-theme #header nav ul li a:hover,
+  body.light-theme #footer a:hover {
+    color: #000000 !important;
+    border-bottom-color: #000000 !important;
+  }
+  
+  /* All text elements in light mode */
+  body.light-theme h1, 
+  body.light-theme h2, 
+  body.light-theme h3, 
+  body.light-theme h4, 
+  body.light-theme h5, 
+  body.light-theme h6, 
+  body.light-theme p, 
+  body.light-theme span, 
+  body.light-theme li {
+    color: #000000 !important;
+  }
+  
+  /* Form elements in light mode */
+  body.light-theme input, 
+  body.light-theme select, 
+  body.light-theme textarea {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    color: #000000 !important;
+    border-color: rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* Button styles in light mode */
+  body.light-theme .button {
+    background-color: transparent !important;
+    color: #000000 !important;
+    border-color: #000000 !important;
+  }
+  
+  body.light-theme .button:hover {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+  
+  /* Make YouTube icon red in both themes */
+  .icon.brands.fa-youtube,
+  .icon.brands.fa-youtube:before,
+  body.light-theme .icon.brands.fa-youtube,
+  body.light-theme .icon.brands.fa-youtube:before {
+    color: #FF0000 !important; /* YouTube red */
+  }
+  
+  /* If it's using Font Awesome classes */
+  .fa-youtube,
+  .fa-youtube-play,
+  body.light-theme .fa-youtube,
+  body.light-theme .fa-youtube-play {
+    color: #FF0000 !important;
+  }
+  
+  /* Theme toggle slider styling */
+  .theme-toggle-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 26px;
+    position: relative;
+    width: 50px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: #333;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 3px;
+    content: "";
+    height: 18px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+  }
+  
+  body.light-theme .slider {
+    background-color: #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Sun and moon icons */
+  .icon-moon, .icon-sun {
+    position: absolute;
+    top: 4px;
+    font-size: 14px;
+  }
+  
+  .icon-moon {
+    right: 6px;
+  }
+  
+  .icon-sun {
+    left: 6px;
+  }
+  
