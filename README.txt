@@ -1,30 +1,15 @@
-Dimension by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+WHY I TEACH
 
+We live in a paradox: careers are getting shorter, yet life is getting longer. The traditional arc of education, work, and retirement is fracturing—and fast. In this new reality, learning isn’t just important, it’s urgent.
 
-This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
-and a cool depth effect (click on a menu item to see what I mean). Simple, fully
-responsive, and kitted out with all the usual pre-styled elements you'd expect.
-Hope you dig it :)
+But today’s learners face a difficult landscape. The rise of algorithm-driven content, marketing hype, and shallow tutorials has made meaningful, targeted learning harder than ever. Ads sell shortcuts, influencers peddle noise, and critical skills get buried under trends. The result? Wasted time, stalled careers, and missed opportunities.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+My mission is to cut through that chaos.
 
-(* = not included)
+I teach with one goal: to help professionals recognize what truly matters, master it with focus, and build durable, burnout-resistant careers. I believe in last-mile-first learning—practical, context-aware guidance designed for those with limited time and high stakes.
 
-AJ
-aj@lkn.io | @ajlkn
+And now, with the advent of AI accelerating obsolescence across industries, that clarity is not a luxury—it’s survival.
 
+This space exists for those who want to reclaim control of their learning, align it with real-world impact, and grow with confidence in a fast-changing world.
 
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Welcome to RougeNeuron Academy!
