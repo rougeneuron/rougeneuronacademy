@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /private/
+Allow: /
+
+Sitemap: https://rougeneuron.in/sitemap.xml
